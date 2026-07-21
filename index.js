@@ -144,7 +144,7 @@ client.on('interactionCreate', async interaction => {
       const row = new ActionRowBuilder().addComponents(selectMenu);
 
       await interaction.reply({
-        content: '**Jogadores Etc**',
+        content: '**Se leu, seu cu é meu**',
         components: [row],
         ephemeral: true
       });
