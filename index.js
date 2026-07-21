@@ -186,3 +186,17 @@ client.on('interactionCreate', async interaction => {
 });
 
 client.login(process.env.DISCORD_TOKEN);
+
+// --- SERVIDOR WEB FALSO PARA MANTER O BOT ONLINE NO KOYEB/RENDER ---
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('O Bot está online e funcionando!');
+});
+
+// Usa a porta que o provedor de nuvem exigir, ou a 3000 por padrão
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Servidor web falso rodando na porta ${port}`);
+});
