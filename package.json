@@ -4,8 +4,7 @@
   "description": "Bot de Seleções e Jogadores Especiais",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "node --test"
+    "start": "node index.js"
   },
   "dependencies": {
     "@discordjs/voice": "^0.19.2",
